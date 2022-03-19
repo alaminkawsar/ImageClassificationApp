@@ -13,6 +13,7 @@
 		1DFFA5B027E5CC2C007C182E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DFFA5AE27E5CC2C007C182E /* Main.storyboard */; };
 		1DFFA5B227E5CC2D007C182E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DFFA5B127E5CC2D007C182E /* Assets.xcassets */; };
 		1DFFA5B527E5CC2D007C182E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DFFA5B327E5CC2D007C182E /* LaunchScreen.storyboard */; };
+		1DFFA5C227E5D4F1007C182E /* ModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFA5C127E5D4F1007C182E /* ModelParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1DFFA5B127E5CC2D007C182E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DFFA5B427E5CC2D007C182E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DFFA5B627E5CC2D007C182E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DFFA5C127E5D4F1007C182E /* ModelParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				1DFFA5A827E5CC2C007C182E /* AppDelegate.swift */,
 				1DFFA5AA27E5CC2C007C182E /* SceneDelegate.swift */,
 				1DFFA5AC27E5CC2C007C182E /* ViewController.swift */,
+				1DFFA5C127E5D4F1007C182E /* ModelParser.swift */,
 				1DFFA5AE27E5CC2C007C182E /* Main.storyboard */,
 				1DFFA5B127E5CC2D007C182E /* Assets.xcassets */,
 				1DFFA5B327E5CC2D007C182E /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				1DFFA5AD27E5CC2C007C182E /* ViewController.swift in Sources */,
 				1DFFA5A927E5CC2C007C182E /* AppDelegate.swift in Sources */,
+				1DFFA5C227E5D4F1007C182E /* ModelParser.swift in Sources */,
 				1DFFA5AB27E5CC2C007C182E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
