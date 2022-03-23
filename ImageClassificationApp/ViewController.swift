@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var image: UIImageView!
     @IBAction func pressButton(_ sender: Any) {
+        textField.text = "Hello Tom"
     }
     override func viewDidLoad() {
         super.viewDidLoad()
