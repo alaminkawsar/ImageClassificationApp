@@ -24,6 +24,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func next(_ sender: Any) {
+        
+        textField.text = ""
+        confidence.text = ""
+        
         if cnt >= 8 {
             cnt = 1
         }
