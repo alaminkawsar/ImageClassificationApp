@@ -9,16 +9,30 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var cnt: Int = 1
+    
     private var modelParser: ModelParser? =
       ModelParser(modelFileInfo: MobileNet.modelInfo, labelsFileInfo: MobileNet.labelsInfo)
 
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var confidence: UITextField!
     @IBAction func pressButton(_ sender: Any) {
         
         textField.text = "Hello Tom"
         doInference()
     }
+    
+    @IBAction func next(_ sender: Any) {
+        if cnt >= 8 {
+            cnt = 1
+        }
+        else {
+            cnt = cnt + 1
+            image.image = UIImage(named: String(cnt))
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -36,12 +50,14 @@ class ViewController: UIViewController {
             }
             let result = getObject.inferences
             
-            print(result[0].confidence, result[1].confidence)
+           // print(result[0].confidence, result[1].confidence)
             
             if result[0].confidence > result[1].confidence {
-                textField.text = result[0].label
+                textField.text = "This is: " + result[0].label
+                confidence.text = "Confidence Score: " + String(result[0].confidence)
             } else {
-                textField.text = result[0].label
+                confidence.text = "Confidence Score :" + String(result[1].confidence)
+                textField.text = "This is: " + result[1].label
             }
             
         }
