@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var image: UIImageView!
     @IBAction func pressButton(_ sender: Any) {
+        
         textField.text = "Hello Tom"
         doInference()
     }
@@ -34,7 +35,9 @@ class ViewController: UIViewController {
                 return
             }
             let result = getObject.inferences
+            
             print(result[0].confidence, result[1].confidence)
+            
             if result[0].confidence > result[1].confidence {
                 textField.text = result[0].label
             } else {
